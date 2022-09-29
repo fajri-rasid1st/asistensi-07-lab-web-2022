@@ -1,0 +1,104 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+	margin: 0px;
+}
+
+ul.navbar {
+	list-style-type: none;
+	margin: 0px;
+	font-size: 20px;
+	font-weight: bold;
+	display: flex;
+	column-gap: 5px;
+}
+
+li.button {
+	float: right;
+}
+
+nav {
+	background-color: #212121;
+	padding: 5px;
+	color: white;
+}
+
+.jumbotron {
+	font-size: 20px;
+	padding: 100px;
+	background-color: #ff6900;
+	text-align: center;
+	color: white;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	background-color: palevioletred;
+	border-radius: 5px;
+	padding: 15px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+footer {
+	background-color: #212121;
+	color: white;
+	padding: 5px;
+}
+
+.section {
+	background-color: #ff6900;
+	color: white;
+	border-radius: 5px;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	word-break: keep-all;
+	width: 200px;
+}
+
+.image {
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+}
+
+.flex-container {
+	display: flex;
+}
+
+.flex-container:last-child {
+	flex-wrap: wrap;
+	margin: 0px 40px;
+	justify-content: space-between;
+}
+
+.flex-container > div {
+	padding: 20px;
+	text-align: justify;
+}
+
+h2 {
+	text-align: center;
+}
+
+ul.no-bullets {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.navigasi {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 40px;
+}
+
+footer div.copyright {
+	text-align: center;
+}
