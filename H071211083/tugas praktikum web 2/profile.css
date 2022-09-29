@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #ffc0cb;
+    font-family:Arial, Helvetica, Verdana;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.header{
+    padding: 20px 40px;
+    background-color: gray;
+}
+
+.navbar{
+    list-style-type: none;
+    margin-top: auto;
+    margin-bottom: 0;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: space-between;
+    display: flex;
+}
+
+.home{
+    font-size: 32px;
+   }
+   
+   .menu{
+     display: flex;
+     gap: lem;
+     font-size: 18px;
+   }
+   
+   .menu li:hover{
+     background-color: #FFF2AD;
+     color: #D9D9D9;
+   }
+   
+   .menu li{
+     padding: 5px 14px;
+   }
+
+nav{
+    
+    padding: 5px;
+}
+
+.jumbotron{
+    font-size: 20px;
+    padding: 100px;
+    background-color: #000000;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+.jumbotron h1 {
+    font-family: 'Great Vibes', cursive;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 #c27ba0 (0, 0, 0, 0.2);
+    background-color: #741b47;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer{
+    background-color: maroon;
+    color: #D9D9D9;
+    padding: 5px;
+}
+
+
+.section{
+    background-color:black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: all .5s ease;
+
+}
+
+.section p{
+    color: #c27ba0;
+}
+
+.image{
+    object-fit: cover;
+    object-position: center;
+    width: 160px;
+    height: 170px;
+    margin: 0 auto;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.flex-container> div{
+    margin:20px 10px;
+    padding: 20px;
+    text-align: justify;
+}
+.left {
+    width: 400px;
+    height: 400px;
+    float: left;
+}
+.rigth {
+    width: 400px;
+    height: 400px;
+    float: right;
+}
+
+h2{
+    text-align: center;
+}
+
+ul.no-bullets{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.section:hover{
+    transform: scale(1.1);
+}
+
+
