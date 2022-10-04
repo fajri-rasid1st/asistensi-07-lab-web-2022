@@ -1,0 +1,174 @@
+* {
+    margin : 0;
+    padding: 0;
+
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    transition: color .5s ease;
+    color: blue;
+}
+
+hr {
+    margin-right: 480px;
+    margin-left: 480px;
+    margin-bottom: 20px;
+}
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+
+.navigation {
+    /* position: fixed;
+    width: 100%;
+    z-index: 10; */
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
+    height: 30px;
+    color: white;
+    padding : 10px 30px;
+    align-items: center;
+
+}
+
+nav li {
+    display: inline;
+    margin : 5px;
+
+}
+
+.jumbotron {
+    height: 600px;
+    position: relative;
+    text-align: center;
+    color: white;
+    background-image: url(image/Spirit\ Breaker\ Dota\ 2\ HD\ Wallpaper.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+}
+
+.jumbotron img {
+   opacity: 0.9;
+   
+}
+
+.jumbo-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 300%;
+    font-family: garamond, serif;
+}
+
+.paragraph_1 {
+    display : flex;
+    color: white;
+    text-align: justify;
+    flex-wrap: wrap;
+    width: 40%;
+    margin-top: -80px;
+    margin-right: 10px;
+    padding-top: 20px;
+
+}
+
+.paragraph_2 {
+    display : flex;
+    color: white;
+    text-align: justify;
+    flex-wrap: wrap;
+    width: 40%;
+    margin-top: -80px;
+    margin-left: 10px;
+    padding-top: 20px;
+
+}
+
+
+.about {
+    text-align: center;
+    background: linear-gradient(45deg, rgb(36,38,39) 11.2%, rgb(17,21,22) 91.1%);
+    height: 400px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+
+
+}
+.about h3 {
+    font-size: 130%;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.section3 {
+    height:700px;
+    color: rgb(202, 202, 202);
+    padding-top: 15px;
+    text-align: center;
+    background: linear-gradient(109.6deg, rgb(36,38,39) 11.2%, rgb(17,21,22) 91.1%);
+}
+
+.section3 img {
+    width: 170px;
+    height: 100px;
+}
+
+.content div {
+    width: 250px;
+    text-align: center;
+
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin : 10px 24px;
+    padding-top: 20px;
+}
+
+.content-item p{
+    text-align: justify;
+    font-size: 80%;
+}
+.content-item h4{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 100%;
+}
+
+.content-item img:hover{
+    opacity: 0.5;
+    animation: shake 0.5s;
+    animation-iteration-count: 1.5;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
