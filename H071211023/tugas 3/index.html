@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+		/>
+		<title>Portofolio</title>
+	</head>
+	<body style="padding-top: 64px">
+		<!-- navbar -->
+		<nav
+			class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top"
+			style="background-color: darkgoldenrod"
+		>
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#"><h1>Cakery</h1></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item mx-2">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item mx-2">
+							<a class="nav-link" href="#About">About</a>
+						</li>
+						<li class="nav-item mx-2">
+							<a class="nav-link" href="#card">PriceList</a>
+						</li>
+						<li class="nav-item mx-2">
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+					</ul>
+					<form class="d-flex" role="search">
+						<input
+							class="form-control me-2"
+							type="search"
+							placeholder="Search"
+							aria-label="Search"
+						/>
+						<button class="btn btn-outline-light" type="submit">Search</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<!-- akhir navbar -->
+
+		<!-- carousel -->
+		<section id="carousel">
+			<div
+				id="carouselExampleCaptions"
+				class="carousel slide"
+				data-bs-ride="false"
+			>
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#carouselExampleCaptions"
+						data-bs-slide-to="0"
+						class="active"
+						aria-current="true"
+						aria-label="Slide 1"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleCaptions"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleCaptions"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item posisition-relative active">
+						<img
+							src="img/chocolate.jpg"
+							class="d-block w-100"
+							alt="cake"
+							style="filter: brightness(0.5)"
+						/>
+						<div
+							class="carousel-caption position-absolute w-100 start-0"
+							style="top: 35%"
+						>
+							<h5>BE MINDFUL, CHOOSE YOUR TREATS.</h5>
+							<p>
+								Apapun pilihan gaya hidupmu, selalu ada tempat untuk sepotong
+								kue lezat!
+							</p>
+						</div>
+					</div>
+					<div class="carousel-item posisition-relative">
+						<img
+							src="img/1081317.jpg"
+							class="d-block w-100"
+							alt="cookies"
+							style="filter: brightness(0.5)"
+						/>
+						<div
+							class="carousel-caption position-absolute w-100 start-0"
+							style="top: 35%"
+						>
+							<h5>BE MINDFUL, CHOOSE YOUR TREATS.</h5>
+							<p>
+								Apapun pilihan gaya hidupmu, selalu ada tempat untuk sepotong
+								kue lezat!
+							</p>
+						</div>
+					</div>
+					<div class="carousel-item posisition-relative">
+						<img
+							src="img/284033.jpg"
+							class="d-block w-100"
+							alt="tart"
+							style="filter: brightness(0.5)"
+						/>
+						<div
+							class="carousel-caption position-absolute w-100 start-0"
+							style="top: 35%"
+						>
+							<h5>BE MINDFUL, CHOOSE YOUR TREATS.</h5>
+							<p>
+								Apapun pilihan gaya hidupmu, selalu ada tempat untuk sepotong
+								kue lezat!
+							</p>
+						</div>
+					</div>
+				</div>
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#carouselExampleCaptions"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#carouselExampleCaptions"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</section>
+
+		<!--about-->
+		<section id="About">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col mt-5 mb-3">
+						<h2 class="mt-5">About Cakery</h2>
+					</div>
+				</div>
+				<div class="row justify-content-center fs-5 text-center">
+					<div class="col-sm-6">
+						<p>
+							Kue adalah kudapan atau makanan ringan yang bukan makanan utama.
+							Kue biasanya bercita rasa manis atau ada pula yang gurih dan asin.
+							Kue sering kali diartikan sebagai makanan ringan yang terbuat dari
+							bahan utama: tepung terigu, gula, telur dan margarin.
+						</p>
+					</div>
+					<div class="col-sm-6">
+						<p>
+							Kami percaya, kenikmatan kue dihasilkan dari penggunaan
+							bahan-bahan halal dan berkualitas. Selain itu, cara pembuatan yang
+							masih tradisional dengan menggunakan tangan atau handmade, semakin
+							memberi nilai jual yang unik dan otentik pada produk kami.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--grid system and badges-->
+		<section id="badges">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col mt-5 mb-3">
+						<h2>Kategory Cakery</h2>
+					</div>
+				</div>
+				<div class="row row-cols-auto justify-content-center">
+					<div class="col-sm-6 col-md-3">
+						<button type="button" class="btn btn-warning">
+							Cakes Cakery <span class="badge text-bg-danger">4</span>
+						</button>
+						<ul>
+							<li>Birthday Cake</li>
+							<li>Wedding Cakes</li>
+							<li>Custom Cakes</li>
+							<li>Roll Cakes</li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<button type="button" class="btn btn-warning">
+							Varian Cake <span class="badge text-bg-danger">3</span>
+						</button>
+						<ul>
+							<li>Black Forest</li>
+							<li>Cheese Cakes</li>
+							<li>Tiramisu</li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<button type="button" class="btn btn-warning">
+							Cup Cakes Box <span class="badge text-bg-danger">3</span>
+						</button>
+						<ul>
+							<li>Chocolate Box</li>
+							<li>Pink Box</li>
+							<li>Rainbow Box</li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<button type="button" class="btn btn-warning">
+							cookies Cakery <span class="badge text-bg-danger">1</span>
+						</button>
+						<ul>
+							<li>Choco Cookies</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--cards-->
+		<section id="card">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col mt-5">
+						<h2 class="mt-5">Cake Generator</h2>
+						<p>
+							Tak perlu dilema pilih yang mana, coba peruntungan kue kamu hari
+							ini dengan rekomendasi lezat dari kami!
+						</p>
+					</div>
+				</div>
+				<div class="row mx-5 justify-content-center">
+					<div class="col-12 col-md-6 col-lg-3 mt-3">
+						<div class="card">
+							<img src="img/cards/cake.jpg" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<h5 class="card-title">Chocolate Salted Caramel</h5>
+								<p class="card-text">
+									Menghadirkan kelembutan dan rasa manis khas yang membuatmu
+									ketagihan.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3 mt-3">
+						<div class="card">
+							<img
+								src="img/cards/browniewithice.jpg"
+								class="card-img-top"
+								alt="..."
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Brownie with ice cream</h5>
+								<p class="card-text">
+									Kue brownies lembut dengan topping es cream membuat suasana
+									hati menjadi semakin bahagia.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3 mt-3">
+						<div class="card">
+							<img src="img/cards/cupcake.jpg" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<h5 class="card-title">Cupcake Coklat</h5>
+								<p class="card-text">
+									cupcake dengan cita rasa cokelat dan buttercreamnya yang
+									begitu kental dan menggoda.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3 mt-3">
+						<div class="card">
+							<img src="img/cards/cookies.jpg" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<h5 class="card-title">Soft choco Cookies</h5>
+								<p class="card-text">
+									Sensasi renyah choco chip cookies dengan butiran cokelat di
+									dalamnya membuat kue ini semakin istimewa.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--alert-->
+		<section>
+			<div class="container-fluid my-4 px-0">
+				<div class="alert alert-dark" role="alert">
+					<div
+						class="alert d-flex justify-content-between mb-0 social-media-container"
+					>
+						<h6>A simple warning alert—check it out!</h6>
+						<div class="d-flex gap-3">
+							<a
+								href="https://www.bing.com/ck/a?!&&p=fdf0d90cdc398b1cJmltdHM9MTY2NTAxNDQwMCZpZ3VpZD0zNjlhZWNkYS1mYjg3LTYzNzEtMzRmMS1mZDkxZmFkMTYyN2MmaW5zaWQ9NTQ3Ng&ptn=3&hsh=3&fclid=369aecda-fb87-6371-34f1-fd91fad1627c&psq=whatsapp&u=a1aHR0cHM6Ly93d3cud2hhdHNhcHAuY29tLw&ntb=1"
+								><i class="bi bi-twitter"> </i
+							></a>
+
+							<a href="https://twitter.com/?lang=en-id"
+								><i class="bi bi-whatsapp"> </i
+							></a>
+
+							<a href="https://github.com/fadilahistq"
+								><i class="bi bi-github"> </i
+							></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--form-->
+		<section id="contact">
+			<div class="container text-white bg-dark">
+				<div class="row">
+					<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+						<h6 class="text-uppercase mb-4 font-weight-bold text-warning">
+							CONTACT
+						</h6>
+						<div class="mb-3">
+							<label for="exampleFormControlInput1" class="form-label"
+								>Email address</label
+							>
+							<input
+								type="email"
+								class="form-control"
+								id="exampleFormControlInput1"
+								placeholder="name@example.com"
+							/>
+						</div>
+						<div class="mb-3">
+							<label for="exampleFormControlTextarea1" class="form-label"
+								>Example textarea</label
+							>
+							<textarea
+								class="form-control"
+								id="exampleFormControlTextarea1"
+								rows="3"
+							></textarea>
+						</div>
+					</div>
+					<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+						<div class="wrapper-col-2">
+							<h6 class="text-uppercase mb-4 font-weight-bold text-warning">
+								ABOUT US
+							</h6>
+							<a href="#">About Cakery</a>
+							<a href="#">Terms</a>
+							<a href="#">Media</a>
+							<a href="#">News</a>
+							<a href="#">Corporate</a>
+						</div>
+					</div>
+					<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+						<div class="wrapper-col-2">
+							<h6 class="text-uppercase mb-4 font-weight-bold text-warning">
+								AVAILABLE ON
+							</h6>
+							<a
+								href="https://www.tokopedia.com/discovery/bebas-ongkir?gclid=Cj0KCQjw-fmZBhDtARIsAH6H8qgpd_2XJHlNKyki_NN99PrRU5ojoAb8RpG9VdyHUC3kV6J6bC8S5-kaApPlEALw_wcB"
+								>Tokopedia</a
+							>
+							<a
+								href="https://www.gojek.com/goclub/?utm_source=google&utm_medium=cpc&utm_campaign=ID_PRO_SEM_LW_Brand-Goclub_%28JY22.05E%29-GoclubJulySem-%28ID01CLUB01%29_N_ALL_ALL_NA_GU_Others-Na_Category_B&utm_term=ID_PRO_SEM_LW_Brand-Goclub_%28JY22.05E%29-GoclubJulySem-%28ID01CLUB01%29_N_ALL_ALL_NA_GU_Others-Na_Category_B&utm_content=ID_PRO_SEM_LW_Brand-Goclub_%28JY22.05E%29-GoclubJulySem-%28ID01CLUB01%29_N_ALL_ALL_NA_GU_Others-Na_Category_B&gclid=Cj0KCQjw-fmZBhDtARIsAH6H8qjf9aHkfqJgmKo8XUUGPfIVCp8XBdog3BZrEbWCc3yLxkJv1-7IuJYaAt0fEALw_wcB"
+								>Gofood</a
+							>
+							<a href="https://www.grab.com/id/">Grabfood</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+						<div class="wrapper-col-2">
+							<h6 class="text-uppercase mb-4 font-weight-bold text-warning">
+								TALK WITH US
+							</h6>
+							<p>
+								<i class="bi bi-house-door-fill"></i> Makassar, Sulawesi Selatan
+							</p>
+							<p><i class="bi bi-envelope-fill"></i> cake@cakery.com</p>
+							<p><i class="bi bi-telephone-fill"></i> +62 8524-3542-023</p>
+							<p><i class="bi bi-inboxes-fill"></i> +62 8524-3542-023</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--footer-->
+		<footer class="text-white bg-dark text-center">
+			<p class="mb-0">
+				<br />
+				© Copyright by
+				<a href="https://www.instagram.com/fadilaahistq/" class="text-white"
+					>Fadilah Istiqamah</a
+				>
+				<br />
+				<br />
+			</p>
+		</footer>
+	</body>
+</html>
