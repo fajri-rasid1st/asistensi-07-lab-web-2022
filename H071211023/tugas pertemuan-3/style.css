@@ -1,23 +1,20 @@
+* {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 section-padding {
 	padding: 100px;
 }
 section-background {
 	background-color: #f6f4ef;
 }
-/* .carousel-item {
-	height: 100vh;
-	min-height: 300px;
-}
-/* .carousel-caption {
-	bottom: 220px;
-	z-index: 2;
-} */
 .carousel-caption h5 {
 	color: white;
 	font-size: 4vw;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	margin-top: 25px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	
 }
 .carousel-caption p {
 	color: white;
@@ -25,6 +22,7 @@ section-background {
 	margin: auto;
 	font-size: 1.5vw;
 	line-height: 1.9;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .wrapper-col-2 {
 	display: flex;
@@ -49,7 +47,7 @@ section-background {
 
 @media (max-width: 560px) {
 	.carousel-caption h5 {
-		font-size: 18px;
+		font-size: 15px;
 	}
 	.carousel-caption p {
 		font-size: 10px;
