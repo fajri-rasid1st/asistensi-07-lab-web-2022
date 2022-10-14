@@ -3,8 +3,7 @@ let counts = {};
 
 for (let i = 0; i < str.length; i++) {
     let ch = str.charAt(i);
-    let count = counts[ch];
-    count == undefined ? count = 1 : count++;
+    counts[ch] == undefined ? counts[ch] = 1 : counts[ch]++;
 }
 for (ch in counts) {
     console.log(`"${ch}" = ${counts[ch]}`);
