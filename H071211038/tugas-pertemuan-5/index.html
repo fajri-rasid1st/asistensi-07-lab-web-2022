@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BlackJack</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/stylesheet.css"/>
+    </head>
+    <body onload="onload()">
+        <main>
+            <section>
+                <div class="container text-center">
+                    <h1>BlackJack</h1>
+                    <form>
+                        <p>Your Card: <span id="card"></span></p>
+                        <p>Sums: <span id="sums"></span></p>
+                        <input type="button" value="Start Game" onclick="startGame()">
+                        <input type="button" value="Take Card" onclick="takeCard()"><br>
+                        <p>Your Money: Rp.<span id="money">5000</span></p>
+                        <input type="number" id="bet" placeholder="Set your bet..."><br>
+                        <input type="button" value="Reset Money" onclick="resetMoney()">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
