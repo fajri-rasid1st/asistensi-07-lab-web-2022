@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.box {
+    background-image: url(backgrond.jpg);
+    justify-content: center;
+    align-items: center;
+	color: rgb(244, 239, 239);
+	text-align: center;
+	width: 300px;
+	height: 400px;
+	padding:  40px;
+    margin-top: 70px;
+    outline: #fff;
+    border-radius: 20%;
+    font-family: Roboto, sans-serif; 
+    font-size: 25px;
+}
+
+#startButton{
+    font-family: 'Fjalla One', sans-serif; 
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#tc{
+    font-family: 'Fjalla One', sans-serif; 
+    font-size: 16px;
+    margin-top: 20px;
+
+}
+
+#cards-el{
+    font-size: 20px; 
+    margin-top: 15px; 
+    margin-bottom: 15px;
+    font-family: 'Emilys Candy', cursive;
+}
+
+#bet-el{
+    width: 320px; 
+    border-radius: 50px; 
+    text-align: center;
+   
+}
+
+.btn {
+    color: beige;}
