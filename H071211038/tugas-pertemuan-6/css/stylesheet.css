@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  font-family: Quicksand, Sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+table{
+    background-color: white;
+}
+
+table thead{
+    background-color: rgb(36, 39, 53);
+}
+
+thead a{
+  color: white !important;
+}
+
+table tbody tr:hover{
+    transition: all 0.5s;
+    background-color: #f5f5f5;
+}
