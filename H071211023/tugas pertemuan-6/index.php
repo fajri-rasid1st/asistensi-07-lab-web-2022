@@ -131,23 +131,14 @@
   </head>
 
   <body>
-    <!-- awal container -->
     <div class="container">
       <h1 class="text-center">BookStore Edition</h1>
-
-
       <div class="row">
-
         <div class="col-md-8 mx-auto">
-          <!-- awal card -->
           <div class="card">
-            <div class="card-header bg-danger bg-gradient text-white">
-              Form Tambah Buku
-            </div>
+            <div class="card-header bg-danger bg-gradient text-white">Form Tambah Buku</div>
             <div class="card-body">
-              <!-- awal form -->
               <form action="" method="POST">
-
                 <input type="hidden" name="id" id="id" value="<?= isset($vid) ? $vid : "" ?>"></input>
                 <div class="mb-3">
                   <label class="form-label">Judul Buku</label>
@@ -184,23 +175,17 @@
                   <input type="submit" name="simpan" value="Simpan Data" class="btn btn-primary" />
                 </div>
               </form>
-              <!-- akhir form -->
 
             </div>
             <div class="card-footer bg-danger bg-gradient">
-
             </div>
           </div>
-          <!-- akhir card -->
         </div>
-
       </div>
 
 
       <div class="card mt-3">
-        <div class="card-header bg-danger bg-gradient text-white">
-          Form Daftar Buku
-        </div>
+        <div class="card-header bg-danger bg-gradient text-white">Form Daftar Buku</div>
         <div class="card-body">
           <div class="col-md-6 mx-auto">
             <form method="POST">
@@ -231,7 +216,7 @@
             //untuk pencarian data
             //ketika tombol cari di klik
             if (isset($_POST['cari'])) {
-              //menampilkan data yang akan dicari
+              //menampilkan data yang akan dicari judul dan genre
               $keyword = $_POST['btncari'];
               $pencarian = "SELECT * FROM tobuku WHERE judul LIKE '%$keyword%' or genre LIKE '%$keyword%' ORDER BY id DESC ";
             } else {
@@ -256,19 +241,12 @@
                 </td>
               </tr>
             <?php endwhile; ?>
-
-
           </table>
         </div>
-        <div class="card-body">
-
-        </div>
         <div class="card-footer bg-danger bg-gradient">
-
         </div>
       </div>
     </div>
-    <!-- akhir container -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
