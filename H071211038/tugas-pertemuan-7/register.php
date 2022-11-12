@@ -68,7 +68,7 @@ $login->isLoggedIn();
         </div>
         </div>
     </div>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/checkPassword.js"></script>
     <script src="assets/js/toggle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
