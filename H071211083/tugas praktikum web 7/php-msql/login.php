@@ -85,13 +85,13 @@ if(isset($_POST['submit'])) {
         justify-content: center;
         border-radius: 10px;
     }
+
 </style>
 
 <body>
     <div id="box">
         <form method="post">
-            <center><div style="font-size: 30px; margin : 10px; text-decoration: underline; font-family: 'Abril Fatface', cursive;">Log In</div><br></center>
-
+            <div style="font-size: 30px; margin : 10px; text-decoration: underline; font-family: 'Abril Fatface', cursive;">Log In</div><br>
             <div>
                 <label style="font-family: 'Sarabun', sans-serif; font-size: 14px;">Username/Email</label>
             <input id="text" type="text" name="username">
@@ -101,15 +101,13 @@ if(isset($_POST['submit'])) {
                 <label style="font-family: 'Sarabun', sans-serif; font-size: 14px;">Password</label>
             <input id="text" type="password" name="password">
             </div><br>
+            <button id="submit" name="submit" type="submit">Login</button><br><br>
 
-            <center><button id="submit" name="submit" type="submit">Login</button><br><br>
-
-            <div style="font-family: 'Sarabun', sans-serif; font-size: 14px;">Belum punya akun? <a href="register.php">Register</a></div><br></center>
+            <div style="font-family: 'Sarabun', sans-serif; font-size: 14px;">Belum punya akun? <a href="register.php">Register</a></div><br>
         </form>
     </div>
 </body>
 </html>
-
 
 
 

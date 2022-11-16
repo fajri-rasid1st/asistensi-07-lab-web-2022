@@ -95,10 +95,15 @@ if (isset($_POST['simpan'])) { //untuk create
 </head>
 <body>
     <div class="mx-auto">
-        <div class="row flex-row justify-content-between">
-            <h1>Selamat datang</h1>
-            <div><a href="logout.php" role="button" class="btn btn-danger">Logout</a></div>
-        </div>
+        <nav class="navbar navbar-expand-lg" style="background-color: #E0FFFF;">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <a class="navbar-brand" style="font-family: 'Calistoga', cursive; color: #778899;">WELCOME</a>
+                <button class="btn btn-outline-dark" type="submit"><a href = "logout.php">Logout</a></button>
+            </div>
+        </nav>  
         <!-- untuk memasukan data -->
         <div class="card">
             <div class="card-header">
