@@ -177,5 +177,5 @@ if (isset($_GET['hal'])) {
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
 
   </body>
-
+  
   </html>
