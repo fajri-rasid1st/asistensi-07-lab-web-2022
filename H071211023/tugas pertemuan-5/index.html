@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Blackjack</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="judul">
+			<h1>BlackJack</h1>
+			<div id="card">
+				<h3 id="condition">Play A Round ?</h3>
+				<br />
+				<h2>Your Cards : <span id="ycard"></span></h2>
+				<br />
+				<h2>Sum : <span id="sum"></span></h2>
+			</div>
+			<div class="button">
+				<button id="start-game" >START GAME</button>
+				<button id="take-card" style="display: none">TAKE CARD</button>
+			</div>
+			<h4 id="kondisi"></h4>
+			<div class="ymoney">
+				<h3></h3>
+				<h2>Your Money : <span id="money"> Rp. 5000 </span></h2>
+				<input type="number" step = "100" id="taruhan" placeholder="Set Your Bet.." />
+			</div>
+			<button onclick="resetgame()" id="reset">RESET GAME</button>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

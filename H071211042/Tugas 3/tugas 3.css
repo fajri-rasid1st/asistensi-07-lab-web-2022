@@ -1,0 +1,60 @@
+.jumbotron {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 20px;
+	padding: 100px;
+	background-image: url("Foto/BG.jpeg");
+	background-size: cover;
+	text-align: center;
+	color: wheat;
+}
+
+#FP {
+	width: 35%;
+	margin-top: 220px;
+	object-fit: cover;
+}
+
+.image {
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+}
+.images {
+	height: 35px;
+	width: 35px;
+}
+
+.img {
+	height: 35px;
+	width: 35px;
+	margin: 15px;
+}
+
+footer {
+	color: aliceblue;
+	margin: 0%;
+}
+
+.copy {
+	text-align: center;
+}
+
+.badge bg-light {
+	color: black;
+}
+
+.image {
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+}
+
+.card-text {
+	text-align: center;
+	word-break: keep-all;
+}
+
+#alert {
+	margin-bottom: 0%;
+}
