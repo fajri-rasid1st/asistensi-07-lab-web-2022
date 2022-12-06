@@ -123,7 +123,6 @@
               <th>Aksi</th>
             </tr>
 
-
             @foreach($data as $item)
 
             <tr>
