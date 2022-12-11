@@ -1,0 +1,19 @@
+body {
+    background-image: url(image/laser-show-glowing-lines-neon-lights-with-black-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slabo-font {
+    font-family: 'Slabo 27px' , serif;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.label-font {
+    font-size: 30px;
+}
+
+.radius-form {
+    border-radius: 10px;
+}

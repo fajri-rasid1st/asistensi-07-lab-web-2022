@@ -1,0 +1,18 @@
+h2 {
+    color: rgb(22, 48, 113);
+}
+
+.form_section {
+    background-color: rgb(56, 66, 72);
+    border-radius: 15px;
+    color: white;
+}
+
+label {
+    font-size: 13px;
+}
+
+table {
+    font-size: 13px;
+}
+
