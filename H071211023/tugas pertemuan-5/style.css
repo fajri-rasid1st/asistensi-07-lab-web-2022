@@ -1,0 +1,72 @@
+* {
+  font-family: 'Acme', sans-serif;
+  margin: 0%;
+}
+body {
+  background-image: url(image/bg.png);
+  background-size: cover;
+}
+.judul{
+  text-align: center;
+  margin: 150px 0px;
+}
+.judul h1{
+  font-size: 70px;
+  color: brown;
+}
+h3 {
+  font-size: x-large;
+  color:rgb(230, 198, 19);
+  
+}
+h4 {
+  font-size: medium;
+  color:rgb(230, 198, 19);
+  margin-top: 20px;
+}
+h2{
+  color: white;
+}
+.button{
+  text-align: center;
+  margin-top: 10px;
+}
+#start-game {
+  font-size: medium;
+  border-style: none;
+  background-color: brown;
+  width: 130px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+#take-card {
+  font-size: medium;
+  border-style: none;
+  background-color: rgb(230, 198, 19);
+  width: 120px;
+  height: 30px;
+  border-radius: 10px;
+}
+.ymoney {
+  margin-top: 20px;
+}
+#money {
+  color: brown;
+}
+#taruhan {
+  margin-top: 10px;
+  border-radius: 20px;
+  text-align: center;
+  width: 300px;
+  height: 20px;
+}
+#reset {
+  background-color: rgb(221, 189, 9);
+  font-size: medium;
+  margin-top: 20px;
+  border-radius: 5px;
+  width: 130px;
+  height: 25px;
+
+}

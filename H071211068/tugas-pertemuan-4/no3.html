@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>No 3</title>
+    <script>
+      const kata = prompt("Masukkan Kalimat");
+
+      if (kata) {
+        const chars = kata.split("");
+        let count = {};
+
+        for (var i = 0; i < chars.length; i++) {
+          if (count[chars[i]] == undefined) count[chars[i]] = 0;
+
+          count[chars[i]]++;
+        }
+
+        for (var i in count) {
+          if (i == " ") {
+            console.log("Spasi = " + count[i]);
+          } else {
+            console.log(i + " = " + count[i]);
+          }
+        }
+      }
+    </script>
+  </head>
+
+  <body></body>
+</html>

@@ -103,7 +103,7 @@ if (isset($_POST['simpan'])) { //untuk create
                     <a class="navbar-brand" style="font-family: 'Calistoga', cursive; color: #778899;">WELCOME</a>
                 <button class="btn btn-outline-dark" type="submit"><a href = "logout.php">Logout</a></button>
             </div>
-        </nav>  
+        </nav>
         <!-- untuk memasukan data -->
         <div class="card">
             <div class="card-header">

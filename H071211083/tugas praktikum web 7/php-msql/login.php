@@ -85,7 +85,6 @@ if(isset($_POST['submit'])) {
         justify-content: center;
         border-radius: 10px;
     }
-
 </style>
 
 <body>

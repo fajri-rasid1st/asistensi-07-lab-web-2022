@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>No 2</title>
+    <script>
+      const number = parseInt(prompt("Perkalian Berapa?"));
+      if (isNaN(number)) {
+        alert("inputan harus angka");
+      } else {
+        const multi = prompt("Ingin Dikalikan Sampai Berapa?");
+
+        if (isNaN(multi)) {
+          alert("inputan harus angka");
+        } else {
+          let hasil;
+          let hasil_perkalian = 0;
+          for (i = 1; i <= multi; i++) {
+            hasil = number * i;
+            hasil_perkalian += hasil;
+            console.log(number + "x" + i + "=" + hasil);
+          }
+          console.log("Hasil seluruh perkalian = " + hasil_perkalian);
+        }
+      }
+    </script>
+  </head>
+
+  <body></body>
+</html>
