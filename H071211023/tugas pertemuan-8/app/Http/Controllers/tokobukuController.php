@@ -26,7 +26,6 @@ class tokobukuController extends Controller
             'isbnbuku' => ['required', 'unique:tokobukus'],
             'harga' => ['required']
         ]);
-
         tokobuku::create($book);
 
         return redirect()->back()->with('status', 'Berhasil Menambahkan Data');
@@ -54,7 +53,6 @@ class tokobukuController extends Controller
             'genre' => ['required', 'max:100'],
             'pengarang' => ['required', 'max:100'],
             'harga' => ['required']
-
         ];
 
         if ($request->isbnbuku != $singleData->isbnbuku) {

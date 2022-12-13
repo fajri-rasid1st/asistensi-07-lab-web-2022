@@ -1,0 +1,71 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    background-image: url("/bg.jpg");
+    background-size: cover;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 30%;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+
+h1 {
+    color: burlywood;
+    font-family: 'Cinzel Decorative';
+    font-style: italic;
+}
+  
+h5{
+    color: antiquewhite;
+}
+
+p {
+    color: white;
+    font-weight: bold;
+}
+  
+input {
+    text-align: center;
+}
+  
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+    background-color: burlywood;
+    font-size: 14px;
+    font-weight: 500;
+}
+  
+button:hover {
+    background-color: crimson;
+}
+  
+#yourCard{
+    color: crimson;
+    font-size: 25px;
+    font-weight: 500;
+}
+  
+#form {
+    border-radius: 10px;
+}
+  
+#pesan {
+    color: crimson;
+    font-weight: bolder;
+    font-size: 25px;
+}
