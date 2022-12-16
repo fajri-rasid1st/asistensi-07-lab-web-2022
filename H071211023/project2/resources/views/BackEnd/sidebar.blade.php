@@ -35,61 +35,47 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
+            <a href="/dashboard/foods" class="nav-link">
               <i class="nav-icon fas fa-hamburger"></i>
               <p>
                 Makanan
                 <span class="right fas fa-angle-left"></span>
               </p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="/manage" class="nav-link active">
-                  <i class="far fa-edit nav-icon"></i>
-                  <p>Manage</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="./index.html" class="nav-link">
-                  <i class="fas fa-plus nav-icon"></i>
-                  <p>Add</p>
-                </a>
-              </li>
-            </ul> 
           </li>
           <li class="nav-item">
-            <a href="/pesanan" class="nav-link">
+            <a href="/dashboard/orders" class="nav-link">
               <i class="nav-icon fas fa-receipt"></i>
               <p>
                 Pesanan
-                <span class="badge badge-info right">2</span>
+                <span class="right fas fa-angle-left"></span>
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="/category" class="nav-link">
+            <a href="/dashboard/categories" class="nav-link">
               <i class="nav-icon fas fa-th-list"></i>
               <p>
                 Category
-                <span class="right badge badge-danger">New</span>
+                <span class="right fas fa-angle-left"></span>
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="/tag" class="nav-link">
+            <a href="/dashboard/tags" class="nav-link">
               <i class="nav-icon fas fa-tags"></i>
               <p>
                 Tag
-                <span class="right badge badge-danger">New</span>
+                <span class="right fas fa-angle-left"></span>
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="/user" class="nav-link">
+            <a href="/dashboard/users" class="nav-link">
               <i class="nav-icon fas fa-user"></i>
               <p>
                 User
-                <span class="right badge badge-danger">New</span>
+                <span class="right fas fa-angle-left"></span>
               </p>
             </a>
           </li>

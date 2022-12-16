@@ -15,14 +15,13 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->integer('food_id');
-            $table->string('address');
-            $table->integer('category_id');
-            $table->integer('user_id');
-            $table->bigInteger('total_price');
-            $table->string('status');
-            $table->string('image');
-            $table->text('note');
+            $table->foreignId('user_id');
+            $table->foreignId('food_id');
+            $table->string('address', 255);
+            $table->unsignedInteger('quantity');
+            $table->unsignedBigInteger('total_price');
+            $table->enum('status', ['dibuat', 'diantar', 'diterima'])->default('dibuat');
+            $table->string('note', 255)->nullable();
             $table->timestamps();
         });
     }

@@ -1,10 +1,11 @@
-@include('BackEnd.header')
+@extends('BackEnd.master')
+@section('title')
+    category page
+@endsection
 
-@include('BackEnd.navbar')
+@section('content')
 
-@include('BackEnd.sidebar')
 
-  <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
@@ -26,7 +27,7 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>150</h3>
+                <h3>10</h3>
 
                 <p>New Orders</p>
               </div>
@@ -40,7 +41,7 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>53</h3>
+                <h3>2</h3>
 
                 <p>User Registrations</p>
               </div>
@@ -58,6 +59,6 @@
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-  </div>
 
-@include('BackEnd.footer')
+
+@endsection

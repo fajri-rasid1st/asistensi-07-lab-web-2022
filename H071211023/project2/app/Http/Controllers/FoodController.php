@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Food;
+use App\Models\Category;
+use App\Models\Tag;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
+use \Cviebrock\EloquentSluggable\Services\SlugService;
 
 class FoodController extends Controller
 {
@@ -15,7 +19,7 @@ class FoodController extends Controller
     public function index()
     {
         $foods = Food::latest()->paginate(10);
-        return view('admin/makanan/manage', ['foods' => $foods]);
+        return view('admin/makanan/index', ['foods' => $foods]);
     }
 
     /**
@@ -25,7 +29,14 @@ class FoodController extends Controller
      */
     public function create()
     {
-        //
+        $categories = Category::latest()->paginate(5);
+        return view('admin/makanan/create', ['categories' => $categories
+        ]);
+        
+        // $tags = Tag::latest()->paginate(10);
+        // return view('admin/tag/index', ['tags' => $tags
+        // ]);
+
     }
 
     /**
@@ -36,7 +47,24 @@ class FoodController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required|max:255',
+            'slug' => 'required|unique:foods',
+            'image' => 'required|mimes:jpg,jpeg,png',
+            'category_id' => 'required',
+            'tag_id' => 'required',
+            'price' => 'required',
+            'description' => 'required',
+        ]);
+        if ($request->file('image')) {
+            $validatedData['image'] = $request->file('image')->store('post-images');
+        }
+        $validatedData['excerpt'] = Str::limit(strip_tags($request->description), 150);
+
+        Food::create($validatedData);
+
+        return redirect('/dashboard/foods')->with('success', 'New post has been added!');
+    
     }
 
     /**
@@ -82,5 +110,11 @@ class FoodController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function checkSlug(Request $request)
+    {
+        $slug = SlugService::createSlug(Category::class, 'slug', $request->name);
+        return response()->json(['slug' => $slug]);
     }
 }

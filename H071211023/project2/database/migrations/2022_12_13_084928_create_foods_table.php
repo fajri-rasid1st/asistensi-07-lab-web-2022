@@ -15,13 +15,14 @@ return new class extends Migration
     {
         Schema::create('foods', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('slug')->unique();
-            $table->string('image');
+            $table->string('name', 255);
+            $table->string('slug', 255)->unique();
+            $table->string('image', 255)->nullable();
+            $table->text('excerpt');
             $table->text('description');
-            $table->bigInteger('price');
-            $table->string('category');
-            $table->string('tag');
+            $table->unsignedBigInteger('price');
+            $table->foreignId('category_id');
+            $table->foreignId('tag_id');
             $table->timestamps();
         });
     }

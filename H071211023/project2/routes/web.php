@@ -3,6 +3,7 @@
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\FrontEndController;
 use App\Http\Controllers\FoodController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\TagController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -19,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('FrontEnd.include.home');
+    return view('FrontEnd.master');
 });
 
 Route::middleware([
@@ -29,21 +30,21 @@ Route::middleware([
 ])->group(function () {
     Route::get('/dashboard', function () {
         return view('admin.dashboard');
-    })->name('dashboard');
+    })->name('dashboard')->middleware('Is_admin');
 });
 
-// Route::middleware(['auth:sanctum',
-//     config('jetstream.auth_session'),
-//     'verified'
-// ])->group(function () {});
+
+Route::get('/', [FrontEndController::class, "index"]);
+Route::get('/redirects', [FrontEndController::class, "redirects"])->middleware('auth');
 
 
-Route::get('/home', [FrontEndController::class, "index"]);
-//     return view('FrontEnd.include.home');
-// })->name('dashboard');
+Route::resource('/dashboard/categories', CategoryController::class)->middleware('Is_admin');
 
-Route::resource('category', CategoryController::class);
-Route::resource('manage', FoodController::class);
-Route::resource('order', OrderController::class);
-Route::resource('tag', TagController::class);
-Route::resource('user', UserController::class);
+
+Route::resource('/dashboard/foods', FoodController::class)->middleware('Is_admin');
+Route::resource('/dashboard/orders', OrderController::class)->middleware('Is_admin');
+Route::resource('/dashboard/tags', TagController::class)->middleware('Is_admin');
+
+Route::resource('/dashboard/users', UserController::class)->middleware('Is_admin');
+
+Route::get('/dashboard/foods/checkSlug', [FoodController::class, 'checkSlug'])->middleware('auth');
